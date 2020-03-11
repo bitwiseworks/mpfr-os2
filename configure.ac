@@ -549,7 +549,7 @@ dnl src/Makefile.am).
 AC_SUBST(MPFR_LDFLAGS)
 AC_SUBST(LIBMPFR_LDFLAGS)
 case $host in
-  *-*-cygwin* | *-*-mingw* | *-*-pw32* | *-*-os2*)
+  *-*-cygwin* | *-*-mingw* | *-*-pw32*)
    AC_MSG_CHECKING(for DLL/static GMP)
    if test "$enable_shared" = yes; then
      MPFR_LDFLAGS="$MPFR_LDFLAGS -no-undefined"
